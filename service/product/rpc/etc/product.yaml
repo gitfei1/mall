@@ -14,4 +14,13 @@ CacheRedis:
     Type: node
     Pass:
 
+Prometheus:
+  Host: 0.0.0.0
+  Port: 9091
+  Path: /metrics
 
+Telemetry:
+  Name: product.rpc
+  Endpoint: http://106.55.228.207:14268/api/traces
+  Sampler: 1.0
+  Batcher: jaeger
